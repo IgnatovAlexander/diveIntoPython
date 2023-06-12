@@ -1,12 +1,12 @@
 def check(a, b, c):
     if a + b > c and a + c > b and b + c > a:
         print("Треугольник существует")
-        if c ** 2 == a ** 2 + b ** 2:
-            print("Прямоугольный тругольник")
-        elif c ** 2 < a ** 2 + b ** 2:
-            print("Остроугольный тругольник")
+        if a == b == c:
+            return "Равностороний"
+        elif a == b or a == c or b == c:
+            return "Равнобедренный"
         else:
-            print("Тупоугольный тругольник")
+            return "Разносторонний"
     else:
         print("Треугольник не существует")
 

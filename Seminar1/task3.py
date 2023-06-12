@@ -5,15 +5,15 @@ print(num)
 
 
 def check(a):
-    for i in range(0, 11):
+    for i in range(0, 10):
         if a < num:
-            print("Ваше число меньше, чем задумал компьютер")
+            return print("Ваше число меньше, чем задумал компьютер")
             check(enter_number())
         elif a > num:
-            print("Ваше число больше, чем задумал компьютер")
+            return print("Ваше число больше, чем задумал компьютер")
             check(enter_number())
         else:
-            print("Вы угадали")
+            return print("Вы угадали")
             break
 
 
@@ -23,3 +23,4 @@ def enter_number():
 
 
 user_number = check(enter_number())
+
